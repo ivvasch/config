@@ -1,0 +1,25 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: none
+    database: POSTGRESQL
+    show-sql: true
+    naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+  database:
+    driverClassName: org.postgresql.Driver
+  datasource:
+    testWileIdle: true
+    validationQuery: SELECT 1
+
+server:
+  port: 8081
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: *
+    enabled-by-default: true
