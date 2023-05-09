@@ -13,6 +13,10 @@ spring:
   datasource:
     testWileIdle: true
     validationQuery: SELECT 1
+  cloud:
+    loadbalancer:
+      ribbon:
+        enabled: false
 
 server:
   port: 8081
@@ -23,3 +27,10 @@ management:
       exposure:
         include: '*'
     enabled-by-default: true
+eureka:
+  instance:
+  preferIpAddress: true
+  client:
+    registerWithEureka: true
+    serviceUrl:
+      defaultZone: http://localhost:8070/eureka/
