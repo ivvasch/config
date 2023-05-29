@@ -13,8 +13,8 @@ spring:
     gateway:
       discovery:
         locator:
-          enabled: true
-          lowerCaseServiceId: true
+          enabled: false
+          lowerCaseServiceId: false
       routes:
         - id: organization-service
           uri: lb://organization-service
