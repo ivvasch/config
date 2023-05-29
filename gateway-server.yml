@@ -10,11 +10,11 @@ eureka:
       defaultZone: http://localhost:8070/eureka/
 spring:
   cloud:
-    gateway:
-      discovery:
-        locator:
-          enabled: false
-          lowerCaseServiceId: false
+#     gateway:
+#       discovery:
+#         locator:
+#           enabled: false
+#           lowerCaseServiceId: false
       routes:
         - id: organization-service
           uri: lb://organization-service
