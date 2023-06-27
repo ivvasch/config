@@ -36,7 +36,7 @@ eureka:
       defaultZone: http://localhost:8070/eureka/
 keycloak:
   realm: spmia-realm
-  auth-server-url: http://localhost:8080/auth
+  auth-server-url: http://localhost:8080/realms/master/protocol/openid-connect/auth
   ssl-required: external
   resource: ostock
   credentials.secret: I6PHIQbsuI23LTkFI8P67jHN2XAsaW4V
