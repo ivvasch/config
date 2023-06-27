@@ -34,3 +34,12 @@ eureka:
     registerWithEureka: true
     serviceUrl:
       defaultZone: http://localhost:8070/eureka/
+keycloak:
+  realm: spmia-realm
+  auth-server-url: http://localhost:8080/auth
+  ssl-required: external
+  resource: ostock
+  credentials:
+    secret: ZCdEJbAKJ8ErTcRc9oWkJ8B92MQdRalO
+  use-resource-role-mapping: true
+  bearer-only: true
