@@ -39,6 +39,6 @@ keycloak:
   auth-server-url: http://localhost:8080/auth
   ssl-required: external
   resource: ostock
-  credentials.secret: ZCdEJbAKJ8ErTcRc9oWkJ8B92MQdRalO
+  credentials.secret: I6PHIQbsuI23LTkFI8P67jHN2XAsaW4V
   use-resource-role-mappings: true
   bearer-only: true
